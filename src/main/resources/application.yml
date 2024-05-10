@@ -1,0 +1,5 @@
+name: "capitec-spring-boot-app"
+enabled: true
+person:
+    name: "Ting-I"
+    surname: "Liang"
