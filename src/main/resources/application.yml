@@ -4,10 +4,12 @@ person:
     name: "Ting-I"
     surname: "Liang"
 spring:
+    application:
+        name: config-client
     profiles:
-        active: native
+        active: development
     config:
-        import: optional:configserver:http://localhost:8888/config-client/development/main
+        import: optional:configserver:http://localhost:8888
     cloud:
         config:
             label: main
