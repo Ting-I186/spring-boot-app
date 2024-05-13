@@ -3,3 +3,15 @@ enabled: true
 person:
     name: "Ting-I"
     surname: "Liang"
+spring:
+    application:
+        name: config-client
+    profiles:
+        active: development
+    config:
+        import: optional:configserver:http://localhost:8888
+    cloud:
+        config:
+            label: main
+            username: root
+            password: s3cr3t
