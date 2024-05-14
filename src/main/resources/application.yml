@@ -15,12 +15,3 @@ spring:
             label: main
             username: root
             password: s3cr3t
-    datasource:
-        driver-class-name: org.postgresql.Driver
-        url: jdbc:postgresql://localhost:5432/db
-        username: tingi
-        password: 8b0c9775-e631-4093-beb0-489d6562be6b
-    spring:
-        jpa:
-            show-sql: true
-            database-platform: org.hibernate.dialect.PostgreSQLDialect
