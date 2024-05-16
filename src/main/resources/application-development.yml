@@ -1,0 +1,15 @@
+name: "capitec-spring-boot-app"
+enabled: true
+person:
+    name: "Ting-I"
+    surname: "Liang"
+spring:
+    config:
+        import: optional:configserver:http://localhost:31901
+    application:
+        name: config-client
+    cloud:
+        config:
+            label: main
+            username: root
+            password: s3cr3t

@@ -6,10 +6,8 @@ person:
 spring:
     application:
         name: config-client
-    profiles:
-        active: development
     config:
-        import: optional:configserver:http://localhost:31901
+        import: optional:configserver:http://10.43.90.104:8888
     cloud:
         config:
             label: main
