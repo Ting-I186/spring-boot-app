@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+    name: postgres-secret
+    labels:
+        app: postgres
+data:
+    POSTGRES_DB: db
+    POSTGRES_USER: tingi
+    POSTGRES_PASSWORD: 8b0c9775-e631-4093-beb0-489d6562be6b
