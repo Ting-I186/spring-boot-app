@@ -2,8 +2,11 @@ package com.example.demo.controllers;
 
 import com.example.demo.models.Todo;
 import com.example.demo.services.TodoService;
+import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/todos")
@@ -12,6 +15,11 @@ public class TodoController {
 
     public TodoController(TodoService todoService) {
         this.todoService = todoService;
+    }
+
+    @GetMapping()
+    public ResponseEntity<List<Todo>> findAll() {
+        return ResponseEntity.ok(todoService.findAll());
     }
 
     @GetMapping("/{id}")
