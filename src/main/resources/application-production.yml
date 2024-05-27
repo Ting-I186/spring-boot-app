@@ -7,7 +7,7 @@ spring:
     application:
         name: config-client
     config:
-        import: optional:configserver:http://10.43.90.104:8888
+        import: optional:configserver:http://10.43.244.121:8888
     cloud:
         config:
             label: main
