@@ -2,11 +2,12 @@ version: '3'
 
 services:
   postgres:
-    image: postgres:14.2
+    image: postgres:14.12
     ports:
       - 5432:5432
     volumes:
       - db-data:/var/lib/postgresql/data
+      - ./src/main/resources:/docker-entrypoint-initdb.d
     environment:
       - POSTGRES_PASSWORD=8b0c9775-e631-4093-beb0-489d6562be6b
       - POSTGRES_USER=tingi

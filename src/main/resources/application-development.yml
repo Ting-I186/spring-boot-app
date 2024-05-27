@@ -5,7 +5,7 @@ person:
     surname: "Liang"
 spring:
     config:
-        import: optional:configserver:http://localhost:31901
+        import: optional:configserver:http://localhost:32739
     application:
         name: config-client
     cloud:
