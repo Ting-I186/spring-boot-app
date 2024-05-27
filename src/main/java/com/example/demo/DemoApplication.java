@@ -24,8 +24,8 @@ public class DemoApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/todos/**").allowedOrigins("*").allowedHeaders("*");
-				registry.addMapping("/todos").allowedOrigins("*").allowedHeaders("*");
+				registry.addMapping("/todos/**").allowedMethods("*").allowedOrigins("*").allowedHeaders("*");
+				registry.addMapping("/todos").allowedMethods("*").allowedOrigins("*").allowedHeaders("*");
 			}
 		};
 	}
